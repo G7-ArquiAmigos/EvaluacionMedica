@@ -1,5 +1,4 @@
 from django.db import models
-from JuntaMedica.models import JuntaMedica
 from Medico.models import Medico
 # Create your models here.
 class DiagnosticoMedico(models.Model):
