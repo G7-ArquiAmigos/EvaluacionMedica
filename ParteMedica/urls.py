@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',views.home),
     path('evaluacionMedica/',include('DiagnosticoMedico.urls')),
-    path('', views.index),
+    path('evaluaciones/', views.index),
 ]
