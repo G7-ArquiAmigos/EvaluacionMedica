@@ -8,7 +8,6 @@ class DiagnosticoMedico(models.Model):
     descripcion = models.TextField()
     recomendaciones = models.TextField()
     medico =models.ForeignKey(Medico, on_delete=models.CASCADE, default=None)
-    JuntaMedica = models.ForeignKey(JuntaMedica, on_delete=models.CASCADE, default=None)
 
     def __str__(self):
         return '{}'.format(self.id)
