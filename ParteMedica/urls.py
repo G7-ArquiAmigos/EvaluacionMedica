@@ -24,3 +24,7 @@ urlpatterns = [
     path('evaluacionMedica/',include('DiagnosticoMedico.urls')),
     path('evaluaciones/', views.index),
 ]
+
+
+if settings.DEBUG is True:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
